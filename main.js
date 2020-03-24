@@ -5,6 +5,17 @@
 
 
 
+
+const triple = function(num) {
+  return num *3}
+
+  const tripleAll = function(numb){
+    return numb.map(triple)
+
+  }
+
+
+
 /********************************
  * OUR CODE HERE - DON'T TOUCH! *
  ********************************/
