@@ -2,10 +2,6 @@
  * YOUR CODE HERE *
  ******************/
 
-
-
-
-
 const triple = function(num) {
   return num *3}
 
@@ -13,9 +9,44 @@ const triple = function(num) {
     return numb.map(triple)
 
   }
+const getNegativeValue = function(posOrNeg){
+  const arr = []
+  return  'positive' ? arr == 0 : posOrNeg
+  
+}
 
+const negativeValues = function(num){
+  
+return num.map(getNegativeValue)
+}
 
+const makeQuestion = function(val){
+  return val + "?"
+}
 
+const questionings = function(val){
+  return val.map(makeQuestion)
+}
+
+const changeToInitials = function(names){
+  return names.map(getInitials)
+}
+
+const getInitials = function(init){
+  return init[0] + init[init.indexOf(' ') + 1];
+}
+
+const doubleIfEven = function(num){
+  if (num % 2 === 0){
+    return num * 2
+  } else {
+    return num
+  }
+}
+
+const doubleEven = function(numbers){
+  return numbers.map(doubleIfEven);
+};
 /********************************
  * OUR CODE HERE - DON'T TOUCH! *
  ********************************/
